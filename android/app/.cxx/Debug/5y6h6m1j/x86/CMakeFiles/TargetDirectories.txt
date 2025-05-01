@@ -1,0 +1,2 @@
+/Users/gosid/Development/Smart_farm/android/app/.cxx/Debug/5y6h6m1j/x86/CMakeFiles/edit_cache.dir
+/Users/gosid/Development/Smart_farm/android/app/.cxx/Debug/5y6h6m1j/x86/CMakeFiles/rebuild_cache.dir
