@@ -14,7 +14,7 @@ class Crops {
 List<Crops> mockCrops = [
   Crops(
       id: 1,
-      name: 'Carrot',
+      name: 'Carrott',
       des: 'Carrotdsdasdadasdasd',
       plant_date: '20/10/2025'),
   Crops(

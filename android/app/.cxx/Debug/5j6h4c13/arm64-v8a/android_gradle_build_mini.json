@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Volumes/ssd_500/Development/flutter/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/gosid/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Volumes/ssd_500/Development/Smart_farm/android/app/.cxx/Debug/5j6h4c13/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/gosid/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Volumes/ssd_500/Development/Smart_farm/android/app/.cxx/Debug/5j6h4c13/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

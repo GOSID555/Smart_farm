@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smartfarm/models/app_color.dart';
+import 'package:smartfarm/pages/field/add_crop.dart';
 import 'package:smartfarm/pages/field/data_plant.dart';
 import 'package:smartfarm/testdata/data.dart';
 
@@ -15,7 +16,14 @@ class FieldPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton.extended(
         backgroundColor: const Color.fromRGBO(82, 170, 94, 1.0),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => AddCrop(),
+            ),
+          );
+        },
         label: const Text(
           'Add',
           style: TextStyle(color: AppColor.color_White),

@@ -129,7 +129,7 @@ class _DataPlantState extends State<DataPlant> {
                       ],
                     ),
                     Card(
-                      child: Container(
+                      child: SizedBox(
                         width: double.infinity,
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),
@@ -178,7 +178,7 @@ class _DataPlantState extends State<DataPlant> {
                           fontWeight: FontWeight.bold),
                     ),
                     Card(
-                      child: Container(
+                      child: SizedBox(
                         width: double.infinity,
                         child: Padding(
                           padding: const EdgeInsets.all(10.0),

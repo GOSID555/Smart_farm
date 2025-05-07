@@ -14,7 +14,7 @@ class SetupCrop extends StatelessWidget {
           Row(
             children: [
               Text("วันที่ปลูก : "),
-              Container(
+              SizedBox(
                 width: 200,
                 child: TextField(
                   decoration: InputDecoration(
@@ -29,7 +29,7 @@ class SetupCrop extends StatelessWidget {
           Row(
             children: [
               Text("วันที่เก็บเกี่ยว : "),
-              Container(
+              SizedBox(
                 width: 200,
                 child: TextField(
                   decoration: InputDecoration(
@@ -44,7 +44,7 @@ class SetupCrop extends StatelessWidget {
           Row(
             children: [
               Text("วันที่พ่นยา : "),
-              Container(
+              SizedBox(
                 width: 200,
                 child: TextField(
                   decoration: InputDecoration(

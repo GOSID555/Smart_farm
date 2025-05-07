@@ -1,0 +1,2 @@
+/Volumes/ssd_500/Development/Smart_farm/android/app/.cxx/Debug/1l3c6j64/x86/CMakeFiles/edit_cache.dir
+/Volumes/ssd_500/Development/Smart_farm/android/app/.cxx/Debug/1l3c6j64/x86/CMakeFiles/rebuild_cache.dir

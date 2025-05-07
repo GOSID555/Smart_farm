@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:smartfarm/models/app_color.dart';
 import 'package:smartfarm/pages/field/Field_Page.dart';
+import 'package:smartfarm/pages/field/add_crop.dart';
+import 'package:smartfarm/testdata/data.dart';
 
 class Home_Page extends StatefulWidget {
   const Home_Page({super.key});
@@ -10,18 +12,8 @@ class Home_Page extends StatefulWidget {
 }
 
 class _Home_PageState extends State<Home_Page> {
+  Crops? selectedCrop;
   @override
-  final List<String> entries = <String>[
-    'Corn',
-    'Rice',
-    'Carrot',
-    'Apple',
-    'Grape',
-    'Tomato',
-    'Chilly',
-  ];
-  final List<int> colorCodes = <int>[600, 500, 100];
-
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: AppColor.color_Dark,
@@ -156,37 +148,52 @@ class _Home_PageState extends State<Home_Page> {
               SizedBox(
                 height: 20,
               ),
-              SizedBox(
-                height: 200,
-                child: ListView.separated(
-                  itemCount: entries.length,
-                  separatorBuilder: (context, index) {
-                    return const SizedBox(
-                      width: 12,
-                    );
-                  },
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) {
-                    return buildCard(index);
-                  },
-                ),
-              )
+              mockCrops.isEmpty
+                  ? ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => AddCrop(),
+                          ),
+                        );
+                      },
+                      child: Text('Add Data'),
+                    )
+                  : SizedBox(
+                      height: 200,
+                      child: ListView.separated(
+                        itemCount: mockCrops.length,
+                        separatorBuilder: (context, index) {
+                          return const SizedBox(
+                            width: 12,
+                          );
+                        },
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (context, index) {
+                          return buildCard(index);
+                        },
+                      ),
+                    )
             ],
           ),
         ));
   }
 
-  Widget buildCard(int index) => Container(
-        height: 100,
-        width: 300,
-        decoration: BoxDecoration(
-            border: Border.all(color: AppColor.color_White),
-            borderRadius: BorderRadius.circular(10)),
-        child: Center(
-          child: Text(
-            '${entries[index]}',
-            style: TextStyle(color: AppColor.color_White),
-          ),
+  Widget buildCard(int index) {
+    final crop = mockCrops[index];
+    return Container(
+      height: 100,
+      width: 300,
+      decoration: BoxDecoration(
+          border: Border.all(color: AppColor.color_White),
+          borderRadius: BorderRadius.circular(10)),
+      child: Center(
+        child: Text(
+          crop.name,
+          style: TextStyle(color: AppColor.color_White),
         ),
-      );
+      ),
+    );
+  }
 }

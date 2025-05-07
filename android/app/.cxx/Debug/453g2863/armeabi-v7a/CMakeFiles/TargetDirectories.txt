@@ -1,0 +1,2 @@
+/Volumes/ssd_500/Development/Smart_farm/android/app/.cxx/Debug/453g2863/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Volumes/ssd_500/Development/Smart_farm/android/app/.cxx/Debug/453g2863/armeabi-v7a/CMakeFiles/rebuild_cache.dir
