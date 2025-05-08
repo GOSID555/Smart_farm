@@ -15,6 +15,7 @@ class _Home_PageState extends State<Home_Page> {
   Crops? selectedCrop;
   @override
   Widget build(BuildContext context) {
+    // สร้าง UI หลักของแอป
     return Scaffold(
         backgroundColor: AppColor.color_Dark,
         body: Padding(
